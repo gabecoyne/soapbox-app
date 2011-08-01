@@ -1,6 +1,6 @@
 == Description
 
-Starter app for using Soapbox[link:https://github.com/gabecoyne/Soapbox]
+Starter app for using Soapbox[link:/gabecoyne/Soapbox]
 
 == New Site
 
