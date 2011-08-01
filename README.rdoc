@@ -2,10 +2,11 @@
 
 - duplicate this folder
 - git remote rm origin - detach it from this repo
+- update config files - especially s3 bucket
+- comment config/*.yml from .gitignore so your settings push to heroku
 - bundle install - install soapbox
 - rails g soapbox_migration
 - rake db:migrate
-- update config files - especially s3 bucket
 - heroku create appname - and/or - heroku create appname-staging
 - git push heroku master
 - rails s - start up development
