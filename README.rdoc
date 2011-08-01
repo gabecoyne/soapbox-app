@@ -1,3 +1,7 @@
+== Description
+
+Starter app for using Soapbox[link:https://github.com/gabecoyne/Soapbox]
+
 == New Site
 
 - duplicate this folder
