@@ -1,0 +1,11 @@
+test:
+  storage: filesystem
+
+development:
+  storage: filesystem
+
+production:
+  storage: s3
+  bucket: bucket_name
+  s3_credentials: "./config/s3.yml"
+  path: "public:url"

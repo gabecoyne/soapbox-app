@@ -1,0 +1,16 @@
+#rails specific
+.bundle
+*.sqlite3
+config/*.yml
+log/*
+tmp/*
+index/*
+public/system
+
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+push_*.dat

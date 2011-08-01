@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta http-equiv="expires" content="Never expire" /> 
+  <title><%= yield(:title) %><%= Setting[:site_name] %></title>
+  <meta name="keywords" content="<%= yield(:keywords) || "" %>" />
+  <meta name="description" content="<%= yield(:description) || "" %>" />
+  <meta name="copyright" content="<%= Setting[:copyright] %>" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" /> 
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />  
+  <%= yield :head_before_styles %> 
+	<%= stylesheet_link_tag "/soapbox/stylesheets/admin_toolbar", "/soapbox/stylesheets/awesome_buttons", "/soapbox/stylesheets/prettyPhoto" %>
+  <%= stylesheet_link_tag "standardize", "layout", "form", "copy" %>  
+  <%= javascript_include_tag "/soapbox/javascripts/jquery-1.4.2.min.js", "/soapbox/javascripts/soapbox.js", "/soapbox/javascripts/jquery.prettyPhoto.js" %>
+  <%= csrf_meta_tag %>
+  <%= yield :head %>
+</head>
+<body>
+<%= render "layouts/admin_toolbar" %>
+	<nav>
+		<%#= menu_nav "top" %>
+		<%= page_nav %>
+	</nav>
+	<content>
+		<%= flash_messages %>
+		<%= yield %>
+	</content>
+	<footer>
+		<small>&copy; <%= Setting[:copyright] %></small>
+		<%#= menu_nav "footer" %>
+	</footer>
+<%= google_analaytics_code %>
+</body>
+</html>

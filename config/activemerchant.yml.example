@@ -1,0 +1,14 @@
+test:
+  login: authnet_login
+  password: authnet_password
+  mode: test
+
+# sandbox
+development:
+  login: authnet_login
+  password: authnet_password
+  mode: test
+
+production:
+  login: authnet_login
+  password: authnet_password
