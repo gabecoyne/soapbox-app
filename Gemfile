@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.8'
-gem 'soapbox', '~> 0.1.3' # , :path => '~/rails/soapbox' # for local dev
+gem 'soapbox', '~> 0.1.7' # , :path => '~/rails/soapbox' # for local dev
 
 group :development do 
 	gem "sqlite3"
