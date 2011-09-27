@@ -1,5 +1,4 @@
-# Rails.application.routes.draw do |map|
-SoapboxRails::Application.routes.draw do
+Rails.application.routes.draw do |map|
 
   # Resources
 
