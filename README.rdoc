@@ -6,13 +6,14 @@ Starter app for using Soapbox[link:https://github.com/gabecoyne/Soapbox]
 
 - duplicate this folder
 - git remote rm origin - detach it from this repo
-- update config files - especially s3 bucket
+- update config files - especially s3 bucket - create s3 bucket manually
 - comment config/*.yml from .gitignore so your settings push to heroku
 - bundle install - install soapbox
 - rails g soapbox_migration
 - rake db:migrate
 - heroku create appname - and/or - heroku create appname-staging
 - heroku stack:migrate bamboo-ree-1.8.7
+- heroku domain add productiondmain.com
 - git push heroku master
 - rails s - start up development
 - rails g soapbox_scaffold post title:string body:text released_at:datetime - build new plugins
