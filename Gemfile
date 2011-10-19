@@ -8,4 +8,11 @@ group :development do
 	gem "sqlite3"
   gem 'ruby-debug' # rails 1.8.x
 	gem "faker", "0.3.1"
+	gem 'rails3-generators'
+end
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'rspec_multi_matchers'
 end
