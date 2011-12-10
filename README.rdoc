@@ -13,6 +13,7 @@ Starter app for using Soapbox[link:https://github.com/gabecoyne/Soapbox]
 - rake db:migrate
 - heroku create appname - and/or - heroku create appname-staging
 - heroku stack:migrate bamboo-ree-1.8.7
+- heroku rake db:migrate
 - heroku addons:add custom_domains
 - heroku domains:add productiondmain.com
 - git push heroku master
