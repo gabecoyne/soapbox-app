@@ -57,8 +57,8 @@ SoapboxRails::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
   
-  config.after_initialize do
-    SslRequirement.ssl_host = 'northwestcare.heroku.com'
-    SslRequirement.non_ssl_host = 'northwestcare.heroku.com' #TODO change to northwestcare.com when we go live
-  end
+  # config.after_initialize do
+  #   SslRequirement.ssl_host = 'mysite.heroku.com'
+  #   SslRequirement.non_ssl_host = 'mysite.heroku.com' #TODO change to northwestcare.com when we go live
+  # end
 end
