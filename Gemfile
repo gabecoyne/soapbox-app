@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.9'
-gem 'soapbox', '~> 0.2.14' # , :path => '~/rails/soapbox' # for local dev
+gem 'soapbox', '~> 0.2.16' # , :path => '~/rails/soapbox' # for local dev
 gem 'newrelic_rpm'
 
 group :development do 
